@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 const env = require("./environment");
 // connect to the database and naming the data base.
-mongoose.connect(`${`${env.DB}` || "mongodb://localhost/EcommerceApi"}`, {
+mongoose.connect(`${env.DB}`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
